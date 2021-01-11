@@ -1,0 +1,1 @@
+This contain the setup for linters, html and css.
