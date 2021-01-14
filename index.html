@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Hello world!</title>
 </head>
 <body>
-    <h1 class='welcome'>Hello world!</h1>
+     <main>
+         <article>
+            Self-belief was identified as the key dimension of motivation influencing student success in 
+            the transition into university. Results identified the link between self-belief 
+            scores on entry and academic performance in first year, including grade point 
+            average and performance in six of nine courses. Courses where there was no significant 
+            relationship were identified as curriculum areas where students may be less motivated. There was a relationship 
+            between the admissions interview and MES-UC scoring, 
+            demonstrating a link between non-cognitive selection measures and student motivation 
+            to learn on entry into the program.
+         </article>
+
+         <form action="POST">
+             <div class="text-type">
+                <label for="name">Name</label><br>
+                <input type="text" name="name"  maxlength="20" required="required"><br>
+            </div>
+            <div class="text-type"> 
+                <label for="email">Email</label><br>
+                <input type="email" name="email-address" class="text-type" maxlength="20" required="required"><br>
+            </div>
+            <div class="text-type">
+                <label for="comment">Comment</label><br>
+                <textarea class="text-type" placeholder="Add your comment here" maxlength="250" required="required"></textarea><br>
+             </div>
+             <div>
+                <label>What is your opinion about this article</label><br>
+            </div>
+            <div>
+                <input type="radio" value="positive" name="opinion"> 
+                <label for="positive">Positive</label><br>
+            </div>
+            <div> 
+                <input type="radio" value="negative" name="opinion">
+                <label for="negative">Nagetive</label><br>
+            </div>
+            <div>
+                <input type="radio" value="neutral" name='opinion'> 
+                <label for="neutral">Neutral</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="subscribe" value='subscribe'> 
+                <label for="subscribe" >I want to subscribe to the newsletter</label><br>
+            </div>
+
+                <button type="submit">Send</button>
+             
+         </form>
+     </main>
 </body>
 </html>
